@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFolio</title>
+    <link rel="stylesheet" href="./css_files/all.min.css" />
+    <link rel="stylesheet" href="./css_files/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css_files/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top pt-2">
+      <div class="container">
+        <a class="navbar-brand fw-medium fs-3" href="#">DevFolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#home"
+                >HOME
+              </a>
+            </li>
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#about"
+                >ABOUT
+              </a>
+            </li>
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#services"
+                >SERVICES
+              </a>
+            </li>
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#portfolio"
+                >WORK
+              </a>
+            </li>
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#blog"
+                >BLOG
+              </a>
+            </li>
+
+            <li class="nav-item ps-2 dropdown w-100">
+              <a
+                class="nav-link dropdown-toggle active fw-semibold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DROP DOWN
+              </a>
+              <ul class="dropdown-menu rounded-0 border ms-3 ps-2">
+                <li>
+                  <a class="dropdown-item fw-semibold" href="#">DropDown1</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item fw-semibold" href="#">DropDown2</a>
+                </li>
+                <!---------------- Drop2----------------------------- -->
+                <!-- <li class="dropdown-item fw-semibold">
+                  <a href="" class="my_deep text-decoration-none text-black"
+                    >Deep Drop Down <span class="ms-4">></span></a
+                  >
+                  <ul class="my_drop d-none">
+                    <li>Deep Drop Doown</li>
+                    <li>Deep Drop Doown</li>
+                    <li>Deep Drop Doown</li>
+                    <li>Deep Drop Doown</li>
+                    <li>Deep Drop Doown</li>
+                  </ul>
+                </li> -->
+
+                <li>
+                  <a class="dropdown-item fw-semibold" href="#">DropDown3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-semibold" href="#">DropDown4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ps-2">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#contact"
+                >CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="parent-home d-flex justify-content-center align-items-center">
+      <div class="child-home text-center">
+        <h1 class="text-white mb-4">I am Morgan Freeman</h1>
+        <span class="fw-semibold text-white fs-1" id="element"></span>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+          var typed = new Typed("#element", {
+            strings: [
+              "Designer|",
+              "Developer|",
+              "Freelancer|",
+              "Photographer|",
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 1500,
+
+            loop: true,
+          });
+        </script>
+      </div>
+    </div>
+
+    <!--About-->
+    <div id="about" class="about mt-5">
+      <div class="container">
+        <div
+          class="my-back row border border-1 shadow p-3 mb-5 bg-body-tertiary py-5 px-5"
+        >
+          <div class="item col-md-6">
+            <div class="inner">
+              <div class="row gy-4">
+                <div class="col-sm-6 col-md-5">
+                  <div class="img">
+                    <img
+                      class="my-img border-0 rounded-2 d-block"
+                      src="./imgs/testimonial-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-7">
+                  <div class="data">
+                    <p>
+                      <span class="span-style">Name:</span
+                      ><span class="span-style-2"> Morgan Freeman</span>
+                    </p>
+                    <p>
+                      <span class="span-style">Profile:</span
+                      ><span class="span-style-2"> full stack developer</span>
+                    </p>
+                    <p>
+                      <span class="span-style">Email:</span
+                      ><span class="span-style-2"> contact@example.com</span>
+                    </p>
+                    <p>
+                      <span class="span-style">Phone:</span
+                      ><span class="span-style-2"> (617) 557-0089</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="skill mb-5">
+                <span class="span-style">Skill</span>
+
+                <p class="my-5">HTML 85%</p>
+                <span class="span-1"></span>
+                <p class="my-5">css3 75%</p>
+                <span class="span-2"></span>
+                <p class="my-5">PHP 50%</p>
+                <span class="span-3"></span>
+                <p class="my-5">JAVASCRIPT 90%</p>
+                <span class="span-4"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item col-md-6">
+            <div class="inner mt-4">
+              <h5 class="my-about fw-semibold fs-2">About me</h5>
+              <div class="mt-4 pt-3">
+                <p class="my-3 text-secondary-emphasis fs-5 fw-lighter lh-base">
+                  Curabitur non nulla sit amet nisl tempus convallis quis ac
+                  lectus. Curabitur arcu erat, accumsan id imperdiet et,
+                  porttitor at sem. Praesent sapien massa, convallis a
+                  pellentesque nec, egestas non nisi. Nulla porttitor accumsan
+                  tincidunt./p>
+                </p>
+                <p class="my-3 text-secondary-emphasis fs-5 fw-lighter lh-base">
+                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  Vivamus suscipit tortor eget felis porttitor volutpat.
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                  amet dui. porttitor at sem.
+                </p>
+                <p class="my-3 text-secondary-emphasis fs-5 fw-lighter lh-base">
+                  Nulla porttitor accumsan tincidunt. Quisque velit nisi,
+                  pretium ut lacinia in, elementum id enim. Nulla porttitor
+                  accumsan tincidunt. Mauris blandit aliquet elit, eget
+                  tincidunt nibh pulvinar a.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services" class="services-parent">
+      <div class="services-title text-center">
+        <h3 class="title">SERVICES</h3>
+        <p class="subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="line"></div>
+      </div>
+
+      <div class="services-items">
+        <div class="container mt-5">
+          <div class="row g-4">
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">WEB DESIGN</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">WEB DEVELOPMENT</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">PHOTOGRAPHY</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">RESPONSIVE DESIGN</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">GRAPHIC DESIGN</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow border-0 rounded-4 text-center p-4"
+              >
+                <div class="icon mb-2 rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <h2 class="s-title">MARKETING SERVICES</h2>
+                  <p class="span-style-2 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing br elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--counter  -->
+    <div id="counter" class="counter-parent mt-5 pt-5">
+      <div class="counter-items">
+        <div class="container overflow-hidden">
+          <div class="row mt-5">
+            <div class="item col-sm-3">
+              <div class="inner pt-4 b text-center">
+                <div class="icon rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="pt-3 fw-semibold fs-2 text-white">450</p>
+                  <span class="fw-medium text-white">WORKS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-sm-3">
+              <div class="inner pt-4 b text-center">
+                <div class="icon rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="pt-3 fw-semibold fs-2 text-white">450</p>
+                  <span class="fw-medium text-white">WORKS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-sm-3">
+              <div class="inner pt-4 b text-center">
+                <div class="icon rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="pt-3 fw-semibold fs-2 text-white">450</p>
+                  <span class="fw-medium text-white">WORKS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-sm-3">
+              <div class="inner pt-4 b text-center">
+                <div class="icon rounded-circle">
+                  <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="pt-3 fw-semibold fs-2 text-white">450</p>
+                  <span class="fw-medium text-white">WORKS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+
+    <div id="portfolio" class="portfolio-parent">
+      <div class="portfolio-title text-center">
+        <h3 class="title">PORTFOLIO</h3>
+        <p class="subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="line"></div>
+      </div>
+
+      <div class="portfolio-items">
+        <div class="container mt-5">
+          <div class="row g-4">
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-1.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class=" h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-2.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class="  h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-3.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class="  h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-4.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class="  h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-5.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class="  h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-4">
+              <div class="my-back inner shadow">
+                <div class="img overflow-hidden">
+                  <img class="w-100" src="./imgs/work-6.jpg" alt="" />
+                </div>
+
+                <div class="content d-flex justify-content-between pe-3  ps-3 pt-4 pb-3">
+                  <div class="category">
+                      <h2 class="portfolio-cards-title fs-5">Lorem impsum dolor</h2>
+                    <span class="portfolio-category-1">Web Design</span>
+                    <span class="portfolio-category-2">/ 18 Sep. 2018</span>
+                  </div>
+                  <div
+                    class="plus "
+                  >
+                    <a class="  h-75  d-flex justify-content-center align-items-center text-decoration-none" href=""
+                      ><span class="">+</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider -->
+
+    <div id="slider" class="slider-parent overflow-hidden">
+      <div class="container-fluid px-0">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="inner text-center">
+                <div class="img-1">
+                  <img src="./imgs/testimonial-2.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h3 class="mt-4 text-white">XAVI ALONSO</h3>
+
+                  <p class="lead mt-4 text-white text-center">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                    sem. Lorem ipsum dolor sit amet, consectetur <br />
+                    adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="inner text-center">
+                <div class="img-2">
+                  <img src="./imgs/testimonial-4.jpeg" alt="" />
+                </div>
+                <div class="content">
+                  <h3 class="mt-4 text-white">MARTA SOCRATE</h3>
+
+                  <p class="lead mt-4 text-white text-center">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                    sem. Lorem ipsum dolor sit amet, consectetur <br />
+                    adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators position-static">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+
+    <div id="blog" class="blog-parent">
+      <div class="blog-title text-center">
+        <h3 class="title">BLOG</h3>
+        <p class="subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="line"></div>
+      </div>
+
+      <div class="blog-items">
+        <div class="container mt-5">
+          <div class="row g-4">
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow rounded-bottom-3"
+              >
+                <div class="img">
+                  <img class="w-100" src="./imgs/post-1.jpg" alt="" />
+                </div>
+                <div class="content  position-relative">
+                  <div class="travel">
+                    <h6>TRAVEL</h6>
+                  </div>
+                  <div class="link-p pb-2 ps-4 pt-4">
+                    <a class="text-decoration-none d-block" href=""
+                      ><h2 class="fs-5">See more ideas about Travel</h2></a
+                    >
+                    <span class="span-style-2 mt-2"
+                      >Proin eget tortor risus. Pellentesque in ipsum id orci
+                      porta dapibus. Praesent sapien massa, convallis a
+                      pellentesque nec, egestas non nisi.
+                    </span>
+                  </div>
+
+                  <div
+                    class="link-time overflow-hidden p-2 border-top border-secondary-subtle rounded-bottom-3"
+                  >
+                    <div class="link d-inline-block ">
+                      <a class="text-decoration-none" href="">
+                        <span
+                          ><img src="./imgs/testimonial-2.jpg" alt="" /> </span
+                        ><span class="">Morgan Freeman</span>
+                      </a>
+                    </div>
+                    <div class="time d-inline-block float-end pe-3">
+                      <span class="text-body-secondary"
+                        ><i class="fa-regular fa-clock"></i
+                      ></span>
+                      <span class="fw-normal"> 10 min </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="item col-md-4">
+              <div
+                class="my-back inner shadow rounded-bottom-3"
+              >
+                <div class="img">
+                  <img class="w-100" src="./imgs/post-1.jpg" alt="" />
+                </div>
+                <div class="content  position-relative">
+                  <div class="travel">
+                    <h6>TRAVEL</h6>
+                  </div>
+                  <div class="link-p pb-2 ps-4 pt-4">
+                    <a class="text-decoration-none d-block" href=""
+                      ><h2 class="fs-5">See more ideas about Travel</h2></a
+                    >
+                    <span class="span-style-2 mt-2"
+                      >Proin eget tortor risus. Pellentesque in ipsum id orci
+                      porta dapibus. Praesent sapien massa, convallis a
+                      pellentesque nec, egestas non nisi.
+                    </span>
+                  </div>
+
+                  <div
+                    class="link-time overflow-hidden  p-2 border-top border-secondary-subtle rounded-bottom-3"
+                  >
+                    <div class="link d-inline-block ">
+                      <a class="text-decoration-none" href="">
+                        <span
+                          ><img src="./imgs/testimonial-2.jpg" alt="" /> </span
+                        ><span class="">Morgan Freeman</span>
+                      </a>
+                    </div>
+                    <div class="time  d-inline-block float-end pe-3">
+                      <span class="text-body-secondary"
+                        ><i class="fa-regular fa-clock"></i
+                      ></span>
+                      <span class="fw-normal"> 10 min </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-4">
+              <div
+                class="my-back inner shadow rounded-bottom-3"
+              >
+                <div class="img">
+                  <img class="w-100" src="./imgs/post-1.jpg" alt="" />
+                </div>
+                <div class="content  position-relative">
+                  <div class="travel">
+                    <h6>TRAVEL</h6>
+                  </div>
+                  <div class="link-p pb-2 ps-4 pt-4">
+                    <a class="text-decoration-none d-block" href=""
+                      ><h2 class="fs-5">See more ideas about Travel</h2></a
+                    >
+                    <span class="span-style-2 mt-2"
+                      >Proin eget tortor risus. Pellentesque in ipsum id orci
+                      porta dapibus. Praesent sapien massa, convallis a
+                      pellentesque nec, egestas non nisi.
+                    </span>
+                  </div>
+
+                  <div
+                    class="link-time overflow-hidden  p-2 border-top border-secondary-subtle rounded-bottom-3"
+                  >
+                    <div class="link d-inline-block ">
+                      <a class="text-decoration-none" href="">
+                        <span
+                          ><img src="./imgs/testimonial-2.jpg" alt="" /> </span
+                        ><span class="">Morgan Freeman</span>
+                      </a>
+                    </div>
+                    <div class="time  d-inline-block float-end pe-3">
+                      <span class="text-body-secondary"
+                        ><i class="fa-regular fa-clock"></i
+                      ></span>
+                      <span class="fw-normal"> 10 min </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="contact-parent overflow-hidden cont-shadow">
+      <div class="container bg-white margin">
+        <div class="row px-5">
+          <div class="item col-md-6">
+            <div class="inner py-5">
+              <div class="contact-title mb-4">
+                <h5 class="position-relative fs-2 fw-semibold">
+                  Send Message Us
+                </h5>
+              </div>
+              <div class="form">
+                <form
+                  action=""
+                  class="d-flex flex-column justify-content-between"
+                >
+                  <div class="name">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="email">
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="subject">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="message">
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="send m-auto mt-4">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="item col-md-6">
+            <div class="inner py-5">
+              <div class="contact-title mb-4">
+                <h5 class="position-relative fs-2 fw-semibold">Get in Touch</h5>
+              </div>
+              <div class="content">
+                <p class="my-3 p-style pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis <br />
+                  dolorum dolorem soluta quidem expedita aperiam aliquid at.
+                  Totam <br />
+                  magni ipsum suscipit amet? Autem nemo esse laboriosam ratione
+                  <br />
+                  nobis mollitia inventore?
+                </p>
+                <div class="location mt-4">
+                  <span class="me-3"
+                    ><i class="fa-solid fa-location-dot"></i
+                  ></span>
+                  <span
+                    class="portfolio-category-2 fs-6 fw-semibold text-secondary"
+                  >
+                    329 WASHINGTON ST BOSTON, MA 02108</span
+                  >
+                </div>
+
+                <div class="phone mt-2">
+                  <span class="me-3"
+                    ><i class="fa-solid fa-mobile-screen-button"></i
+                  ></span>
+                  <span
+                    class="portfolio-category-2 fs-6 fw-semibold text-secondary"
+                  >
+                    (617) 557-0089</span
+                  >
+                </div>
+
+                <div class="cont mt-2">
+                  <span class="me-3"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></span>
+                  <span
+                    class="portfolio-category-2 fs-6 fw-semibold text-secondary"
+                  >
+                    contact@example.com</span
+                  >
+                </div>
+                <div class="icons d-flex mt-4">
+                  <div
+                    class="icon me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="">
+                      <span><i class="fa-brands fa-facebook fa-lg"></i></span
+                    ></a>
+                  </div>
+                  <div
+                    class="icon me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="">
+                      <span><i class="fa-brands fa-instagram fa-lg"></i></span
+                    ></a>
+                  </div>
+                  <div
+                    class="icon me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <a href=""
+                      ><span><i class="fa-brands fa-twitter fa-lg"></i></span
+                    ></a>
+                  </div>
+                  <div
+                    class="icon me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="">
+                      <span><i class="fa-brands fa-linkedin fa-lg"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-parent footer-bg text-center py-4 text-white overflow-hidden">
+  
+      <div class="footer-link">
+         <p><span>&#169 </span>Copyright <strong>DevFolio.</strong>  All Rights Reserved  </p>
+        <span  >Designed by</span>
+        <a class="text-decoration-none text-white" href=""> BootstrapMade</a>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
